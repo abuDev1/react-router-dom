@@ -1,13 +1,78 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #333;
+  color: white;
+  font-family: 'Roboto';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar_cont {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 10px auto;
+  align-items: center;
+}
+
+.cover {
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.navigation>ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navigation>ul>li {
+  color: gray;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navigation>ul>li>a {
+  text-decoration: none;
+  color: gray;
+}
+
+.navigation>ul>li>a:hover {
+  color: white;
+}
+
+.navigation>ul>li>a.active {
+  border-bottom: 3px solid white;
+}
+
+.home_page,
+.features {
+  text-align: center;
+  width: 500px;
+  margin: 150px auto;
+}
+
+.home_page>p,
+.features>p {
+  font-weight: 200;
+}
+
+.home_page>button {
+  margin-top: 20px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.features>.butt_cont>button {
+  margin: 20px 10px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 17px;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.map {
+  text-align: center;
+  margin-top: 150px;
 }
